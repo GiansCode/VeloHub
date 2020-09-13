@@ -80,8 +80,8 @@ public class VeloHubPlugin {
      * This method registers the listeners
      */
     private void registerListeners() {
-        server.getEventManager().register(new PlayerListener(this), this);
-        server.getEventManager().register(new PluginMessageListener(this), this);
+        server.getEventManager().register(this, new PlayerListener(this));
+        server.getEventManager().register(this, new PluginMessageListener(this));
     }
 
     /**
