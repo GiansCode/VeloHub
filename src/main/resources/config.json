@@ -1,0 +1,29 @@
+{
+  "lobby-servers": [
+    {
+      "name": "lobby1",
+      "lowest-protocol-version": 47
+    },
+    {
+      "name": "lobby2",
+      "lowest-protocol-version": 751
+    }
+  ],
+  
+  "load-balancing-method": "RANDOM",
+  "send-player-to-hub-on-server-close": true,
+  
+  "hub-command": {
+    "enabled": true,
+    "aliases": [
+      "lobby"
+    ]
+  },
+  
+  "messages": {
+    "kickNoLobbyAvailable": "<red>There isn't a lobby available, please re-join later",
+    "noLobbyAvailable": "<red>There isn't a lobby available, please try later",
+    "successReload": "<green>Plugin reloaded",
+    "errorReload": "<red>An error occurred while plugin reload, please check the logs"
+  }
+}
